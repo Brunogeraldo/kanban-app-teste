@@ -1,0 +1,68 @@
+/* src/TaskModal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px; /* Ajuste a largura conforme necessário */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+input, textarea, select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none; /* Impede o redimensionamento do textarea */
+    height: 80px; /* Altura fixa para o textarea */
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button[type="button"] {
+    background-color: #ccc;
+}
+
+button[type="button"]:hover {
+    background-color: #aaa;
+}
